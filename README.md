@@ -54,5 +54,5 @@ https://www.dropbox.com/scl/fi/5uwl3spw4uxp1jkyc0vf4/henry-demo.mp4?dl=0&rlkey=k
 ## Caveats
 There are some obvious things that are missing, such as
 - No user auth. On the API side, there's an easy way to add an auth middleware in `api.service.js` in the routes. 
-- Some error handling is a bit wonky, but would be ironed out if I had more time. 
+- I'm seeding the database twice in the demo, and changing the dates for the seeded data so that I could demo an invalid appointment request that was less than 24 hours in advance. Also, the seeding was meant as a quick way to provide data, rather that adding available timeslots manually with REST calls. There IS a method to do that in the timeslot service, but it's easier to just add it to the seeded data set for this demo. 
 - There's no env config used. I hard coded values for my local PostgreSQL instance, but in a real world scenario these would be out of the repo. 
