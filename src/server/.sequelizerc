@@ -1,0 +1,8 @@
+const path = require('path');
+const migrations = {
+  'local':{
+    "config": path.resolve('./config/config.json'),
+    "seeders-path": path.resolve('./data/seeders')
+  },
+};
+module.exports = migrations['local'];
